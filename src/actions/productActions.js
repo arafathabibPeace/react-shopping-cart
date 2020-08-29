@@ -30,8 +30,8 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
           ? 1
           : -1
         : a.price > b.price
-        ? -1
-        : 1
+          ? -1
+          : 1
     );
   }
   console.log(sortedProducts);
