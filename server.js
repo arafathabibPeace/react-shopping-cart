@@ -16,6 +16,12 @@ mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/react-shopping-
 }
 );
 
+// mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useUnifiedTopology: true,
+// });
+
 const Product = mongoose.model(
     "products",
     new mongoose.Schema({
